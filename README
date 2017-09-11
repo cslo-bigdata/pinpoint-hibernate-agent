@@ -15,4 +15,5 @@ pom.xml           init                        7 minutes ago
 </dependency>
 粘贴到pinpoint\plugins\pom.xml里
 2、将hibernate文件夹复制到pinpoint\plugins\下
-3、重新导入项目即可
+3、修改所有pom的版本
+4、重新导入项目
