@@ -6,7 +6,7 @@ github资源文件目录结构为
     README           Create README                        4 minutes ago
     pom.xml           init                        7 minutes ago 
 
-### 1、将pom.xml里的<modules>下的"<module>hibernate</module>"粘贴到pinpoint\plugins\pom.xml相同的<modules>里，将
+### 1、将pom.xml里的&lt;modules&gt;下的"&lt;module&gt;hibernate&lt;/module&gt;"粘贴到pinpoint\plugins\pom.xml相同的&lt;modules&gt;里，将
 
     <dependency>
       <groupId>com.navercorp.pinpoint</groupId>
