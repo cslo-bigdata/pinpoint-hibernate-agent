@@ -14,7 +14,7 @@ github资源文件目录结构为
       <version>${project.version}</version>
     </dependency>
     
-粘贴到pinpoint\plugins\pom.xml里  
-2、将hibernate文件夹复制到pinpoint\plugins\下  
-3、修改所有pom的版本  
-4、重新导入项目
+粘贴到pinpoint\plugins\pom.xml里                                    
+2、将hibernate文件夹复制到pinpoint\plugins\下                                    
+3、修改所有pom的版本                                    
+4、重新导入项目                                  
