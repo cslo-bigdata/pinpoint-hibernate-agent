@@ -6,7 +6,7 @@ LICENSE           Initial commit                        31 minutes ago
 README           Create README                        4 minutes ago
 pom.xml           init                        7 minutes ago 
 
-###1、将pom.xml里的<modules>下的"<module>hibernate</module>"粘贴到pinpoint\plugins\pom.xml相同的<modules>里，
+### 1、将pom.xml里的<modules>下的"<module>hibernate</module>"粘贴到pinpoint\plugins\pom.xml相同的<modules>里，
 将
 
 
@@ -22,9 +22,9 @@ pom.xml           init                        7 minutes ago
 
 粘贴到pinpoint\plugins\pom.xml里
 
-###2、将hibernate文件夹复制到pinpoint\plugins\下
+### 2、将hibernate文件夹复制到pinpoint\plugins\下
 
-###3、修改所有pom的版本
+### 3、修改所有pom的版本
 
-###4、重新导入项目
+### 4、重新导入项目
 
