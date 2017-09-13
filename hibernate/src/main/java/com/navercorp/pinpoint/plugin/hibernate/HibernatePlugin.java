@@ -66,22 +66,11 @@ public class HibernatePlugin implements ProfilerPlugin, TransformTemplateAware {
 
     // SqlSession implementations
     private void addInterceptorsForSqlSession() {
-        //final MethodFilter methodFilter = MethodFilters.name("selectOne", "selectList", "selectMap", "select", "insert", "update", "delete");
-        //final String[] sqlSessionImpls = { "org.apache.ibatis.session.defaults.DefaultSqlSession", "org.mybatis.spring.SqlSessionTemplate" };
         final MethodFilter methodFilter = MethodFilters.name("select", "insert", "update", "delete", "save", "saveorupdate", "get", "load", 
         		"createQuery", "setParameter", 
-        		"createSqlQuery", 
+        		"createSqlQuery","query", 
         		"createCriteria", "add");
         final String[] sqlSessionImpls = { "org.hibernate.Session", "org.hibernate.Query" , "org.hibernate.SQLQuery" , "org.hibernate.Criteria"};
-        //org.hibernate.Session
-        //save,delete,update,saveorupdate,get,load,
-        //org.hibernate.Query
-        //createQuery,setParameter
-        //org.hibernate.SQLQuery
-        //createSqlQuery,
-        //org.hibernate.Criteria
-        //createCriteria,add
-        
         
         for (final String sqlSession : sqlSessionImpls) {
             transformTemplate.transform(sqlSession, new TransformCallback() {
